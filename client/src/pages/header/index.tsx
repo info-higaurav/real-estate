@@ -9,7 +9,7 @@ export default function Header() {
 
     ]
     return (
-        <nav className="flex justify-center items-center border">
+        <nav className="flex justify-center items-center">
             <div className="wrapper w-full max-w-[1440px] py-3 px-3 md:py-5 ">
                 <div className="nav-container flex justify-between items-center">
                     <section className="brand-info">
