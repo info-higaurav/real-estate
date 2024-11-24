@@ -24,7 +24,7 @@ export default function Carousel () {
 
     return(
         <div className="carousel flex justify-center w-full overflow-hidden">
-            <div className="carousel-container  relative overflow-hidden max-w-[1400px]  h-svh md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-xl w-full bg-cover ">
+            <div className="carousel-container bg-BgPrimary  relative overflow-hidden max-w-[1400px]  h-svh md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-xl w-full bg-cover ">
                 <svg className="clippath ">
                     <defs>
                         <clipPath id="svg-clip" clipPathUnits="objectBoundingBox">
