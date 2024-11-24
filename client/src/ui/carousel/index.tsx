@@ -6,8 +6,8 @@ export default function Carousel () {
     const [currentIndex , setCurrentIndex]=useState(0)
     const carouselItems=[
         {url:"https://cms.ezylegal.in/wp-content/uploads/2022/07/right-to-property-is-a-legal-right.jpg"},
-        {url:"https://www.loans.com.au/dA/9de8aa8d51/what-factors-affect-property-value.png"},
-        {url:"https://i2.au.reastatic.net/800x600/941df6ab7aba382ffef65940775a8a072d086bc76e800930131bde0e688c36fe/image.jpg"}
+        {url:"https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+        {url:"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
     ]
 
     
@@ -18,13 +18,13 @@ export default function Carousel () {
                 return
             }
             setCurrentIndex(0)
-        }, 2000)
+        }, 4000)
         return () => clearInterval(intervalId)
     })
 
     return(
         <div className="carousel flex justify-center w-full overflow-hidden">
-            <div className="carousel-container  relative overflow-hidden max-w-[1400px]  h-svh md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-xl w-full bg-cover " style={{backgroundImage:`url(${carouselItems[currentIndex].url})`}}>
+            <div className="carousel-container  relative overflow-hidden max-w-[1400px]  h-svh md:h-[500px] lg:h-[600px] xl:h-[700px] rounded-xl w-full bg-cover ">
                 <svg className="clippath ">
                     <defs>
                         <clipPath id="svg-clip" clipPathUnits="objectBoundingBox">
@@ -33,9 +33,13 @@ export default function Carousel () {
                     </defs>
                 </svg>
 
-                <div className='overlay bg-black bg-opacity-60 w-full h-screen absolute top-0 left-0'>
+                {/* background image */}
+                <img src={carouselItems[currentIndex].url} alt={currentIndex.toString()} className=" w-full h-full absolute top-0 object-cover zoomInOut"/>
+
+                <div className='overlay bg-black bg-opacity-60 w-[1920px] h-[1080px] absolute top-0 left-0'>
 
                 </div>
+
 
                 <div className='content absolute top-0  w-full h-full flex flex-col md:flex-row  md:items-center text-center md:text-start md:gap-0 text-white gap-10 justify-center px-5'>
                     <section className='flex flex-col gap-10 md:gap-10 items-center md:items-start justify-center md:h-full md:px-5'>
@@ -53,6 +57,12 @@ export default function Carousel () {
 
                     </section>
                 </div>
+                <div className='absolute w-full z-20 flex gap-2  h-full top-0 items-end justify-center md:justify-end'>
+                    {carouselItems.map((_, index)=>{
+                        return <section className={`w-[50px] md:w-[100px] ${currentIndex == index ? "bg-BgButton" : "bg-white"} h-[2px]  mb-5 mr-5 cursor-pointer`} onClick={()=> setCurrentIndex(index)} key={index}></section>
+                    })}
+                </div>
+                
             </div>
         </div>
     )
