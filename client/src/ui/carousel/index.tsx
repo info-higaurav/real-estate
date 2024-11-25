@@ -41,10 +41,10 @@ export default function Carousel () {
                 </div>
 
 
-                <div className='content absolute top-0  w-full h-full flex flex-col md:flex-row  md:items-center text-center md:text-start md:gap-0 text-white gap-10 justify-center px-5'>
+                <div className=' title-container content absolute top-0  w-full h-full flex flex-col md:flex-row  md:items-center text-center md:text-start md:gap-0 text-white gap-10 justify-center px-5'>
                     <section className='flex flex-col gap-10 md:gap-10 items-center md:items-start justify-center md:h-full md:px-5'>
-                        <h1 className='text-5xl font-bold xl:text-8xl'>Top notch living space</h1>
-                        <p className='text-lg xl:text-xl'>Bringing together a team with passion, dedication, and resources to help our clients reach their buying and selling goals. We are with you every step of the way.</p>
+                        <h1 className='title text-5xl font-bold xl:text-8xl'>Top notch living space</h1>
+                        <p className='paragraph text-lg xl:text-xl'>Bringing together a team with passion, dedication, and resources to help our clients reach their buying and selling goals. We are with you every step of the way.</p>
                         <button className='font-semibold bg-BgButton text-PrimaryText rounded-md w-fit py-3 px-10'>Explore Properties</button>
                     </section>
                     <section className=' flex justify-center items-center w-full md:flex md:justify-center md:items-center  md:h-full'>
