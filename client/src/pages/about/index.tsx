@@ -5,10 +5,10 @@ export default function About () {
         <div className="about flex justify-center">
             <div className="wrapper w-full max-w-[1400px] px-5">
                 <div className="about-info flex flex-col gap-5 py-10 md:flex-row">
-                    <section className="flex flex-col items-center md:items-start md:flex-1 ">
+                    <section className="flex flex-col items-center gap-3 md:gap-4  md:items-start md:flex-1 ">
                         <h1 className="font-bold text-gray-700 text-5xl">Aboout</h1>
-                        <h2 className="font-bold text-white -mt-5 text-2xl">About Us</h2>
-                        <p className="text-center md:text-start">With over 20 years of experience, we are a real estate firm dedicated to offering exceptional locations to our partners.</p>
+                        <h2 className="font-bold text-white -mt-7 md:-mt-8 text-3xl md:text-4xl">About Us</h2>
+                        <p className="text-center md:text-start lg:text-xl">With over 20 years of experience, we are a real estate firm dedicated to offering exceptional locations to our partners.</p>
                     </section>
                     
                     <section className="flex justify-center md:flex-1 md:justify-end md:items-end ">
