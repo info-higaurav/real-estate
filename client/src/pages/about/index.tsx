@@ -44,9 +44,9 @@ export default function About () {
                     </div>
                 </section>
 
-                <section className="flex flex-col-reverse px-3 gap-10 py-10 md:flex-row md:items-center">
-                    <h3 className="text-4xl">Complete real estate services designed to make the purchase, sale, and management of your properties simple and confident.</h3>
-                    <div className="rounded-full overflow-hidden w-[150px] h-[150px] md:min-w-[250px] md:h-[250px] ">
+                <section className="flex flex-col-reverse px-3 gap-10 py-10 md:flex-row md:items-center md:justify-between">
+                    <h3 className="font-semibold text-white text-xl xl:max-w-[700px] lg:text-2xl md:text-3xl">Complete real estate services designed to make the purchase, sale, and management of your properties simple and confident.</h3>
+                    <div className="rounded-full overflow-hidden w-[150px] h-[150px] md:min-w-[200px] md:h-[200px] ">
                         <img src="https://plus.unsplash.com/premium_photo-1682144187125-b55e638cf286?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D" alt="profile" className="w-full h-full object-cover" />
                     </div>
 
