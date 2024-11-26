@@ -55,21 +55,21 @@ export default function About () {
 
                 <section className="flex flex-col md:flex-row md:items-center">
                 <div className="flex flex-col gap-3 py-10 px-3 ">
-                        <LandPlot size={40} />
-                        <h1 className="text-xl font-bold">Property Valuation</h1>
+                        <LandPlot size={50} className="text-white " />
+                        <h1 className="text-xl font-bold text-white lg:text-2xl">Property Valuation</h1>
                         <p>Comprehensive real estate services that simplify and instill confidence in the purchase, sale, and management of your properties.</p>
                     </div>
 
                     <div className="flex flex-col gap-3 py-5 px-3">
                         
-                    <MapPinHouse size={40} />
-                    <h1 className="text-xl font-bold">Property Management</h1>
+                    <MapPinHouse size={40} className="text-white" />
+                    <h1 className="text-xl font-bold text-white lg:text-2xl">Property Management</h1>
                     <p>Business consulting provides expert advice and services to improve real estate performance and achieve desired outcomes</p>
                     </div>
 
-                    <div className="flex flex-col gap-3 py-5 px-3">
-                    <IndianRupee size={40}   />
-                    <h1 className="text-xl font-bold">Invest Opportunities</h1>
+                    <div className="flex flex-col gap-3 py-5 px-3 text-white">
+                    <IndianRupee size={40} className="text-white"   />
+                    <h1 className="text-xl font-bold lg:text-2xl">Invest Opportunities</h1>
                     <p>Real estate services that enable the seamless and confident purchase, sale, and management of your growing properties.</p>
                     </div>
                 </section>
